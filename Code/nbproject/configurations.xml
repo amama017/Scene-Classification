@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="88">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Classifiers.h</itemPath>
+      <itemPath>Clusters.h</itemPath>
+      <itemPath>Features.h</itemPath>
+      <itemPath>IO.h</itemPath>
+      <itemPath>Manager.h</itemPath>
+      <itemPath>Pyramid.h</itemPath>
+      <itemPath>includes.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Classifiers.cpp</itemPath>
+      <itemPath>Clusters.cpp</itemPath>
+      <itemPath>Features.cpp</itemPath>
+      <itemPath>IO.cpp</itemPath>
+      <itemPath>Manager.cpp</itemPath>
+      <itemPath>Pyramid.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../../OpenCV-2.4.1/include/opencv</pElem>
+            <pElem>../../OpenCV-2.4.1/include/opencv2</pElem>
+            <pElem>libs/vlfeat-0.9.16</pElem>
+            <pElem>../../OpenCV-2.4.1/include</pElem>
+            <pElem>../../OpenCV-2.4.1</pElem>
+          </incDir>
+          <commandLine>`pkg-config --cflags --libs opencv`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_1</output>
+          <linkerAddLib>
+            <pElem>../../OpenCV-2.4.1/build/lib</pElem>
+            <pElem>libs/vlfeat-0.9.16/bin/glnxa64</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibFileItem>libs/vlfeat-0.9.16/bin/glnxa64/libvl.so</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>`pkg-config --cflags --libs opencv`</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="Classifiers.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classifiers.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Clusters.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Clusters.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Features.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Features.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Manager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Manager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pyramid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pyramid.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="includes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>../../OpenCV-2.4.1/include/opencv</pElem>
+            <pElem>../../OpenCV-2.4.1/include/opencv2</pElem>
+            <pElem>libs/vlfeat-0.9.16</pElem>
+            <pElem>../../OpenCV-2.4.1/include</pElem>
+          </incDir>
+          <commandLine>`pkg-config --cflags --libs opencv`</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../../OpenCV-2.4.1/build/lib</pElem>
+            <pElem>libs/vlfeat-0.9.16/bin/glnxa64</pElem>
+          </linkerAddLib>
+          <additionalDep>sift</additionalDep>
+          <commandLine>`pkg-config --cflags --libs opencv`</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="Classifiers.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Classifiers.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Clusters.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Clusters.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Features.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Features.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Manager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Manager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pyramid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pyramid.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="includes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
